@@ -17,10 +17,10 @@ steps:
     echo Add other tasks to build, test, and deploy your project.
     echo See https://aka.ms/yaml
     mkdir test
-    echo pwd
+    pwd
     cd test
-    echo pwd
+     pwd
     git clone https://github.com/tloy1966/AzureDevOpsPipeline
-    ls -latr
+    ls -latR
   displayName: 'Run a multi-line script'
 
