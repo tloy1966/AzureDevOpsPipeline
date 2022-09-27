@@ -16,11 +16,16 @@ steps:
 - script: |
     echo Add other tasks to build, test, and deploy your project.
     echo See https://aka.ms/yaml
-    mkdir test
-    pwd
-    cd test
-     pwd
-    git clone https://github.com/tloy1966/terraform-azure-devops-starter.git
-    ls -latR
+   
   displayName: 'Run a multi-line script'
 
+- task: Bash@3
+  inputs:
+    targetType: 'inline'
+    script: |
+      mkdir test
+          pwd
+          cd test
+           pwd
+          git clone https://github.com/tloy1966/terraform-azure-devops-starter.git
+          ls -latR
